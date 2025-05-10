@@ -25,7 +25,6 @@
       margin-bottom: 1.5rem;
     }
 
-    /* Navigation Panel */
     nav {
       width: 100%;
       text-align: center; /* Centers the links horizontally */
@@ -109,8 +108,7 @@
     <a href="why.html">Why Interviewli?</a>
   </nav>
 
-  <!-- Home Content -->
-  <div class="content home">
+  <div class="content">
     <p><span class="name-highlight">Interviewli</span> is Sri Lanka’s first mock interview platform that lets you rehearse with real professionals, get feedback that matters, and walk into your next interview ready to win.</p>
   
     <p class="tagline">Because interviews aren’t luck—they’re practice!</p>
@@ -125,49 +123,5 @@
       <div class="dot"></div>
     </div>
   </div>
-
-  <!-- Why Interviewli Content -->
-  <div class="content why" style="display: none;">
-    <h2>🚀 Interviewli: Sri Lanka’s First Mock Interview Platform</h2>
-    <p>Real Interviews. Real Feedback. Real Results.</p>
-    <p>Interviewli is the first mock interview platform in Sri Lanka that connects job seekers with industry professionals for simulated interviews, personalized feedback, and career growth.</p>
-    <p>Whether you're prepping for your first job, switching careers, or refining your pitch, Interviewli helps you walk into any interview room confident and prepared.</p>
-
-    <h3>🎯 Who Is It For?</h3>
-    <ul>
-      <li>👩‍💼 <strong>Job Seekers & Students:</strong> Practice with experts in your target industry. Choose your interviewer based on company, role, or domain. Improve communication, problem-solving, and role-specific responses. Get actionable feedback and interview tips for just LKR 3000 per session.</li>
-      <li>🏫 <strong>Universities & Institutes:</strong> Offer mock interview credits as part of final-year programs. Help students experience real-world interview pressure before graduation. Track progress and readiness through structured interviewer feedback.</li>
-      <li>🏢 <strong>HR Teams & Employers:</strong> Use Interviewli to pre-screen candidates through external expert interviews. Offer mock interview sessions as part of outplacement support during transitions. Upskill internal teams on interview best practices through observer or reverse interviews.</li>
-    </ul>
-
-    <h3>😎 Why Interviewli?</h3>
-    <ul>
-      <li>✅ <strong>First-mover advantage in Sri Lanka’s talent tech space:</strong> We're not just early — we're first. While others are still figuring out what a mock interview is, we’re already helping people ace theirs.</li>
-      <li>🧑‍🏫 <strong>Human-led, not AI-guesswork:</strong> No bots. No awkward delays. Just real professionals giving real feedback — the kind you wish you got after that “We’ll get back to you” email.</li>
-      <li>📦 <strong>Scalable across roles, industries & borders:</strong> From fresh grads to senior techies, Interviewli fits all. Use it if you're applying for your first internship — or your third promotion. Yes, it scales better than your office coffee machine.</li>
-      <li>🕐 <strong>Flexible, fast & available on your schedule:</strong> Late night panic before an interview? We got you. Book anytime, prep in your PJs, and show up ready — without losing sleep (or sanity).</li>
-      <li>💸 <strong>Affordable enough to skip one pizza night:</strong> At just LKR 3000 a session, Interviewli gives you clarity, confidence, and coaching — all for less than your weekend Uber bill.</li>
-    </ul>
-    <p>💬 "It’s like having a friend who interviews you — but knows what they’re doing."</p>
-  </div>
-
-  <script>
-    // Show content based on the navigation link clicked
-    const showContent = (content) => {
-      const homeContent = document.querySelector('.home');
-      const whyContent = document.querySelector('.why');
-      
-      if (content === 'home') {
-        homeContent.style.display = 'block';
-        whyContent.style.display = 'none';
-      } else {
-        homeContent.style.display = 'none';
-        whyContent.style.display = 'block';
-      }
-    };
-
-    // Set the initial page to 'Home' content
-    showContent('home');
-  </script>
 </body>
 </html>
