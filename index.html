@@ -20,6 +20,23 @@
       padding: 0 1rem;
     }
 
+    nav {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+    }
+
+    nav a {
+      color: #0ff;
+      font-weight: 700;
+      margin-right: 1rem;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     .logo {
       max-width: 400px;
       margin-bottom: 1.5rem;
@@ -33,7 +50,7 @@
     }
 
     .name-highlight {
-      font-size: 1.3rem; /* one point bigger */
+      font-size: 1.3rem;
       font-weight: 700;
       color: orange;
       animation: pulse 2s infinite;
@@ -99,6 +116,11 @@
   </style>
 </head>
 <body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="why.html">Why Interviewli?</a>
+  </nav>
+
   <img src="https://raw.githubusercontent.com/IrshadHR/Interviewli/9cf0c2161a52fd96674a275e649d20884950d983/Interviewli%20Logo.png" alt="Interviewli Logo" class="logo" />
   
   <p><span class="name-highlight">Interviewli</span> is Sri Lanka’s first mock interview platform that lets you rehearse with real professionals, get feedback that matters, and walk into your next interview ready to win.</p>
