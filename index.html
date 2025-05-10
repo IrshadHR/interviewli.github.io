@@ -25,28 +25,23 @@
       margin-bottom: 1.5rem;
     }
 
+    /* Navigation Panel */
     nav {
-      margin-top: 1.5rem; /* Moves the navigation down */
+      width: 100%;
+      text-align: center; /* Centers the links horizontally */
+      margin-top: 2rem; /* Adds space between logo and nav */
     }
 
     nav a {
       color: #0ff;
       font-weight: 700;
-      margin-right: 1rem;
+      margin: 0 1rem; /* Adds space between the links */
       text-decoration: none;
       cursor: pointer;
     }
 
     nav a:hover {
       text-decoration: underline;
-    }
-
-    .content {
-      display: none;
-    }
-
-    .home, .why {
-      display: block;
     }
 
     .name-highlight {
@@ -108,11 +103,13 @@
 <body>
   <img src="https://raw.githubusercontent.com/IrshadHR/Interviewli/9cf0c2161a52fd96674a275e649d20884950d983/Interviewli%20Logo.png" alt="Interviewli Logo" class="logo" />
 
+  <!-- Navigation Panel -->
   <nav>
-    <a onclick="showContent('home')">Home</a>
-    <a onclick="showContent('why')">Why Interviewli?</a>
+    <a href="index.html">Home</a>
+    <a href="why.html">Why Interviewli?</a>
   </nav>
 
+  <!-- Home Content -->
   <div class="content home">
     <p><span class="name-highlight">Interviewli</span> is Sri Lanka’s first mock interview platform that lets you rehearse with real professionals, get feedback that matters, and walk into your next interview ready to win.</p>
   
@@ -129,7 +126,8 @@
     </div>
   </div>
 
-  <div class="content why">
+  <!-- Why Interviewli Content -->
+  <div class="content why" style="display: none;">
     <h2>🚀 Interviewli: Sri Lanka’s First Mock Interview Platform</h2>
     <p>Real Interviews. Real Feedback. Real Results.</p>
     <p>Interviewli is the first mock interview platform in Sri Lanka that connects job seekers with industry professionals for simulated interviews, personalized feedback, and career growth.</p>
@@ -154,7 +152,8 @@
   </div>
 
   <script>
-    function showContent(content) {
+    // Show content based on the navigation link clicked
+    const showContent = (content) => {
       const homeContent = document.querySelector('.home');
       const whyContent = document.querySelector('.why');
       
@@ -165,7 +164,10 @@
         homeContent.style.display = 'none';
         whyContent.style.display = 'block';
       }
-    }
+    };
+
+    // Set the initial page to 'Home' content
+    showContent('home');
   </script>
 </body>
 </html>
