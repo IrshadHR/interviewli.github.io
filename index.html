@@ -20,27 +20,33 @@
       padding: 0 1rem;
     }
 
-    .logo {
-      max-width: 400px;
-      margin-bottom: 1.5rem;
-    }
-
     nav {
-      width: 100%;
-      text-align: center; /* Centers the links horizontally */
-      margin-top: 2rem; /* Adds space between logo and nav */
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
     }
 
     nav a {
       color: #0ff;
       font-weight: 700;
-      margin: 0 1rem; /* Adds space between the links */
+      margin-right: 1rem;
       text-decoration: none;
-      cursor: pointer;
     }
 
     nav a:hover {
       text-decoration: underline;
+    }
+
+    .logo {
+      max-width: 400px;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      line-height: 1.6;
+      font-weight: 400;
     }
 
     .name-highlight {
@@ -97,31 +103,38 @@
         opacity: 0.85;
       }
     }
+
+    a {
+      color: #0ff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <img src="https://raw.githubusercontent.com/IrshadHR/Interviewli/9cf0c2161a52fd96674a275e649d20884950d983/Interviewli%20Logo.png" alt="Interviewli Logo" class="logo" />
-
-  <!-- Navigation Panel -->
   <nav>
     <a href="index.html">Home</a>
     <a href="why.html">Why Interviewli?</a>
   </nav>
 
-  <div class="content">
-    <p><span class="name-highlight">Interviewli</span> is Sri Lanka’s first mock interview platform that lets you rehearse with real professionals, get feedback that matters, and walk into your next interview ready to win.</p>
+  <img src="https://raw.githubusercontent.com/IrshadHR/Interviewli/9cf0c2161a52fd96674a275e649d20884950d983/Interviewli%20Logo.png" alt="Interviewli Logo" class="logo" />
   
-    <p class="tagline">Because interviews aren’t luck—they’re practice!</p>
+  <p><span class="name-highlight">Interviewli</span> is Sri Lanka’s first mock interview platform that lets you rehearse with real professionals, get feedback that matters, and walk into your next interview ready to win.</p>
   
-    <p>🚧 We’re laying the digital foundation and we will go live soon!</p>
-    <p>Wish to know when we are live?</p>
-    <p>Send a <strong>“Hi Interviewli”</strong> to 📩 <a href="mailto:info.interviewli@gmail.com">info.interviewli@gmail.com</a></p>
+  <p class="tagline">Because interviews aren’t luck—they’re practice!</p>
+  
+  <p>🚧 We’re laying the digital foundation and we will go live soon!</p>
+  <p>Wish to know when we are live?</p>
+  <p>Send a <strong>“Hi Interviewli”</strong> to 📩 <a href="mailto:info.interviewli@gmail.com">info.interviewli@gmail.com</a></p>
 
-    <div class="dots">
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-    </div>
+  <div class="dots">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
   </div>
 </body>
 </html>
